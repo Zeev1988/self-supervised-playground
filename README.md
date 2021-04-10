@@ -18,8 +18,8 @@ pip install -e .
 
 ## Running the experiments
 
-To train any of the self-supervised tasks with a specific algorithm, run:
+To train any of the self-supervised tasks with a specific algorithm, run: <br>
 ```train.py self_supervised_3d_tasks/configs/train/{algorithm}_{dimension}.json```
 
-To run the downstream task and initialize the weights from a pretrained checkpoint, run:
+To run the downstream task and initialize the weights from a pretrained checkpoint, run: <br>
 ```finetune.py self_supervised_3d_tasks/configs/finetune/{algorithm}_{dimension}.json```
