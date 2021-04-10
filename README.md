@@ -5,7 +5,7 @@ based on https://github.com/HealthML/self-supervised-3d-tasks.git
 In this codebase we provide configurations for training/evaluation of our models.
 
 ## Preparing data
-**Our implementations of the algorithms require the data to be squared for 3D cubic.**
+**Our implementations of the algorithms require the data to be 128x128x128x4 dimensions.**
 
 ## Clone the repository and install dependencies
 ```
