@@ -18,8 +18,11 @@ pip install -e .
 
 ## Running the experiments
 
-To train any of the self-supervised tasks with a specific algorithm, run: <br>
-```train.py self_supervised_3d_tasks/configs/train/{algorithm}_{dimension}.json```
+To train any of the self-supervised tasks with a specific task, run: <br>
+```train.py configs/train/base_3d_brats.json```
 
-To run the downstream task and initialize the weights from a pretrained checkpoint, run: <br>
-```finetune.py self_supervised_3d_tasks/configs/finetune/{algorithm}_{dimension}.json```
+In base_3d_brats.json choose which task you want to train by updating the 'task' field with the relevant task name.<br>
+to run the combination of the task set it to 'all'.<br>
+
+To run the downstream task and initialize the weights from a pretrained checkpoint( for now only support cpc), run: <br>
+```finetune.py configs/finetune/cpc_3d_brats.json```
