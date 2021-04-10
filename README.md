@@ -1,7 +1,5 @@
 # self-supervised-playground
 based on https://github.com/HealthML/self-supervised-3d-tasks.git
-Overview
-
 
 ## Usage instructions
 In this codebase we provide configurations for training/evaluation of our models.
@@ -20,4 +18,8 @@ pip install -e .
 
 ## Running the experiments
 
-To train any of the self-supervised tasks with a specific algorithm, run python train.py self_supervised_3d_tasks/configs/train/{algorithm}_{dimension}.json To run the downstream task and initialize the weights from a pretrained checkpoint, run python finetune.py self_supervised_3d_tasks/configs/finetune/{algorithm}_{dimension}.json
+To train any of the self-supervised tasks with a specific algorithm, run:
+```train.py self_supervised_3d_tasks/configs/train/{algorithm}_{dimension}.json```
+
+To run the downstream task and initialize the weights from a pretrained checkpoint, run:
+```finetune.py self_supervised_3d_tasks/configs/finetune/{algorithm}_{dimension}.json```
